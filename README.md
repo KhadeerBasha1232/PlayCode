@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React + Monaco Editor + Sandpack Project
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a React-based application that integrates Monaco Editor and Sandpack to provide a live coding environment. It includes components for managing files, editing code, installing npm packages, and previewing the output.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **File Manager**: Add, delete, and switch between files.
+- **Editor**: Edit code with Monaco Editor.
+- **Preview**: Live preview of the code using Sandpack.
+- **Package List**: View installed npm packages.
+- **Package Installer**: Install new npm packages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or later)
+- npm (v6 or later)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KhadeerBasha1232/PlayCode.git
+   cd PlayCode
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+1. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Open your browser and navigate to `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### File Manager
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Add a File**: Enter the new file name in the input field and click "Add".
+- **Delete a File**: Click the "✖" button next to the file name.
+- **Switch File**: Click on the file name to set it as the active file.
 
-## Learn More
+### Editor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The editor displays the content of the active file.
+- Make changes to the code, and the changes will be reflected in the preview.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Preview
 
-### Code Splitting
+- The preview component shows the live output of the code using Sandpack.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Package List
 
-### Analyzing the Bundle Size
+- View the list of installed npm packages in the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Package Installer
 
-### Making a Progressive Web App
+- **Install a Package**: Enter the package name in the input field and click "Install". The package will be added to the list of dependencies and the preview will be updated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+```
+src/
+├── components/
+│   ├── FileManager.js
+│   ├── Editor.js
+│   ├── Preview.js
+│   ├── PackageList.js
+│   └── PackageInstaller.js
+├── App.js
+├── index.js
+└── styles.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! Please create a pull request or submit an issue if you find any bugs or have suggestions for improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
